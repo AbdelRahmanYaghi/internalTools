@@ -1,10 +1,6 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
 name = "internalTools"
-version = "0.0.3"
+version = "0.0.4"
 requires-python = ">=3.10"
 dependencies = [
     "sentence-transformers==3.0.1",
@@ -12,8 +8,8 @@ dependencies = [
     "ftfy==6.2.3"
 ]
 authors = [
-  {name = "Abdelrahman Yaghi", email = "ayaghi@avertra.com"},
-  {name = "Omar Quishawi", email = "oquishawi@avertra.com"}
+  {name = "Abdelrahman Yaghi", email = "abd.a.yaghi@gmail.com"},
+  {name = "Omar Quishawi", email = "omaralquishawi25@gmail.com"}
 ]
 description = "A Library containing a set of useful internal tools for ML and AI development."
 readme = "README.md"
@@ -21,6 +17,10 @@ license = {file = "LICENSE"}
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Programming Language :: Python"
+]
+maintainers = [
+  {name = "Abdelrahman Yaghi", email = "abd.a.yaghi@gmail.com"},
+  {name = "Omar Quishawi", email = "omaralquishawi25@gmail.com"}
 ]
 [project.urls]
 Homepage = "https://pypi.org/project/internalTools/"
