@@ -1,3 +1,6 @@
+'''
+Constants used in text processing functions
+'''
 emoji_ranges = [
     (0x1F600, 0x1F64F),  # Emoticons
     (0x1F300, 0x1F5FF),  # Miscellaneous Symbols and Pictographs
@@ -10,4 +13,6 @@ emoji_ranges = [
     (0x1FA70, 0x1FAFF)   # Symbols and Pictographs Extended-A
 ]
 
-emoji_translation_table = {chr(code): None for start, end in emoji_ranges for code in range(start, end + 1)}
+emoji_translation_table = {chr(code): None
+                            for start, end in emoji_ranges
+                                for code in range(start, end + 1)}
