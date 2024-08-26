@@ -1,11 +1,13 @@
 [project]
 name = "internalTools"
-version = "0.0.6"
+version = "0.0.6.1"
 requires-python = ">=3.10"
 dependencies = [
     "sentence-transformers==3.0.1",
     "nltk==3.8.1",
-    "ftfy==6.2.3"
+    "ftfy==6.2.3",
+    "transformers==4.44.2",
+    "gliner==0.2.10"
 ]
 authors = [
   {name = "Abdelrahman Yaghi", email = "abd.a.yaghi@gmail.com"},
