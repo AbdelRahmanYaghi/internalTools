@@ -1,6 +1,6 @@
 [project]
 name = "internalTools"
-version = "0.0.6.1"
+version = "0.0.7"
 requires-python = ">=3.10"
 dependencies = [
     "sentence-transformers==3.0.1",
