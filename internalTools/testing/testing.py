@@ -6,7 +6,7 @@ import time
 # calculate time taken by a function
 start=time.time()
 # from internalTools.modeling import run_ner_model
-from internalTools.modeling import run_qa_model
+from internalTools.modeling import run_zero_shot_model
 
 context = """Cristiano Ronaldo is a Portuguese professional footballer who plays
  as a forward for Premier League club Manchester United and captains the 
@@ -19,10 +19,11 @@ context = """Cristiano Ronaldo is a Portuguese professional footballer who plays
  most goals and assists in the UEFA Champions League, most goals in the UEFA 
  European Championship, most international"""
 
-labels = ["person","sport"]
-
-question = "what is Ronaldos nationality?"
+# labels = ["person","sport"]
 # print(run_ner_model(context,labels))
 
-print(run_qa_model(context,question,device='cuda:0'))
+# question = "what is Ronaldos nationality?"
+# print(run_qa_model(context,question,device='cuda:0'))
+categories = ['Sports', 'Politics', 'Business', 'Technology']
+print(run_zero_shot_model(context,categories,device='cuda:0'))
 print("Time taken by the scrpit is: ",time.time()-start)
